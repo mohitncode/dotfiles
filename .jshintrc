@@ -1,0 +1,12 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "maxerr": 1000,
+  "strict": "implied",
+  "undef": true,
+  "unused": true,
+  "browser": true,
+  "console": true,
+  "node": true,
+  "nocomma": true
+}
