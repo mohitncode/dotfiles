@@ -6,7 +6,6 @@
   "undef": true,
   "unused": true,
   "browser": true,
-  "console": true,
   "node": true,
   "nocomma": true
 }
