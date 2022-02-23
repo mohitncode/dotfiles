@@ -1,0 +1,50 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 100
+
+format = "$all"
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character] # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+[directory]
+truncation_length = 5
+format = "[$path]($style)[$lock_symbol]($lock_style) "
+truncation_symbol = "…/"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+# ~/.config/starship.toml
+
+[battery]
+full_symbol = "🔋 "
+charging_symbol = "⚡️ "
+discharging_symbol = "💀 "
+
+[[battery.display]]
+threshold = 10
+style = "bold red"
+
+[hostname]
+ssh_only = false
+format = "<[$hostname]($style)>"
+trim_at = "-"
+style = "bold dimmed white"
+disabled = true
+
+[time]
+format = "at [$time]($style) "
+style = "yellow"
+disabled = false
+
+[username]
+style_user = "blue dimmed bold"
+style_root = "red bold"
+format = "[$user]($style) "
+disabled = false
+show_always = true
